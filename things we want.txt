@@ -1,0 +1,16 @@
+Name:
+Dates:
+   start
+   end
+Grade Item: grade_item
+   auto export: d2l_2p0:is_autoexport="yes"
+   allow attempt to be set as graded
+   overall grade calculation: mark_calculation_type?
+Attempt Settings:
+   attempts allowed: attempts_allowed
+Submission Views:
+   Show Questions:
+   Show Question Answers:
+   Show Questions Score and out of score:
+   Show attempt score and overall attempt score:
+   Show Class Average:
