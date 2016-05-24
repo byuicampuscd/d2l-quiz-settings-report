@@ -9,6 +9,7 @@ var async = require('async'),
    fs = require('fs'),
    path = require('path'),
    folder = process.cwd(),
+   open = require('open'),
    filesNames;
 
 function getFileNames(folder) {
@@ -196,7 +197,8 @@ module.exports = function () {
          //console.log(fileInfoArray[0].questestinterop.assessment.assessfeedback);
          //console.log(fileInfoArray[4]);
 
-         var quizData;
+         var quizData,
+            fileOut = path.resolve('./Report.html');
          //if error
          if (err) {
             console.log(err);
@@ -215,10 +217,14 @@ module.exports = function () {
 
          //make html page with sortable columns and save file
          try {
+
             fs.writeFileSync('Report.html', makeHtml(courseId, quizData));
             console.log('Done!');
          } catch (error) {
             console.log(error);
+         }
+         if (process.argv[2] !== '--no-open') {
+            open(path.resolve('./Report.html'));
          }
       });
 

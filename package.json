@@ -1,25 +1,26 @@
 {
-   "name": "d2l-quiz-setting-report",
-   "version": "1.0.0",
-   "description": "this makes quiz settings in d2l quiz exports into a nice readable html file.",
-   "main": "quizSettingsReport.js",
-   "dependencies": {
-      "async": "^2.0.0-rc.3",
-      "handlebars": "^4.0.5",
-      "handlebars-helper-repeat": "^0.3.1",
-      "moment": "^2.13.0",
-      "xml2js": "^0.4.16"
-   },
-   "bin": {
-      "d2l-quiz-settings-report": "bin/run.js"
-   },
-   "devDependencies": {
-      "handlebars": "^4.0.5"
-   },
-   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "hbCompile": "handlebars  htmlPageTemplate.handlebars -c handlebars  -f htmlPageTemplate.js"
-   },
-   "author": "Joshua McKinney",
-   "license": "ISC"
+  "name": "d2l-quiz-setting-report",
+  "version": "1.0.0",
+  "description": "this makes quiz settings in d2l quiz exports into a nice readable html file.",
+  "main": "quizSettingsReport.js",
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "handlebars": "^4.0.5",
+    "handlebars-helper-repeat": "^0.3.1",
+    "moment": "^2.13.0",
+    "open": "0.0.5",
+    "xml2js": "^0.4.16"
+  },
+  "bin": {
+    "d2l-quiz-settings-report": "bin/run.js"
+  },
+  "devDependencies": {
+    "handlebars": "^4.0.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hbCompile": "handlebars  htmlPageTemplate.handlebars -c handlebars  -f htmlPageTemplate.js"
+  },
+  "author": "Joshua McKinney",
+  "license": "ISC"
 }
