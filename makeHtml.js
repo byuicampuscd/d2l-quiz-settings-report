@@ -4,7 +4,7 @@
 var handlebars = require('./handlebarsSetup.js');
 
 module.exports = function (courseId, quizData) {
-   console.log("\nMAKING HTML:");
+   console.log("Making HTML File");
    var context = {
          courseId: courseId,
          quizzes: quizData,
@@ -30,6 +30,6 @@ module.exports = function (courseId, quizData) {
          quiz.submissionView.push(subViewFiller);
       }
    });
- 
+
    return handlebars.templates.htmlPageTemplate(context);
 };

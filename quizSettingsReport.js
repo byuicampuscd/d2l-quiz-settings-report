@@ -204,17 +204,19 @@ module.exports = function () {
          }
          //get the info we want
          quizData = getFileInfo(fileInfoArray);
-
+         /*
          console.dir(quizData[0], {
             depth: 3
          });
          console.dir(quizData[4], {
             depth: 3
          });
+         */
 
          //make html page with sortable columns and save file
          try {
             fs.writeFileSync('Report.html', makeHtml(courseId, quizData));
+            console.log('Done!');
          } catch (error) {
             console.log(error);
          }
