@@ -2,7 +2,7 @@
 
 This makes an html file from a d2l quiz export file.
 
-Instructions
+## Instructions
 
 1. Export Some Quizes from a course in D2L
 1. Download and unzip the export file on to your computer
