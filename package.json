@@ -1,7 +1,7 @@
 {
-  "name": "d2l-quiz-setting-report",
+  "name": "d2l-quiz-settings-report",
   "version": "1.0.0",
-  "description": "this makes quiz settings in d2l quiz exports into a nice readable html file.",
+  "description": "This makes quiz settings in d2l quiz exports into a nice readable html file.",
   "main": "quizSettingsReport.js",
   "dependencies": {
     "async": "^2.0.0-rc.3",
